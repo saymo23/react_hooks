@@ -2,22 +2,26 @@ import { useState } from 'react'
 
 export const useCounter = (initialState = 110) => {
 
-  const [state, setState] = useState(initialState)
+  const [counter, setCounter] = useState(initialState)
 
-  const increment = (factor = 1) => {
-    setState((state) + factor)
+  //Para el usefetch del componente de las Quote 
+  const increment = () => {
+    setCounter((counter) + 1)
   }
 
-  const decrement = (factor = 1) => {
-    setState((state) - factor)
-  }
+  // const increment = (factor = 1) => {
+  //   setState((state) + factor)
+  // }
 
-  const reset = () => setState(initialState)
+  // const decrement = (factor = 1) => {
+  //   setState((state) - factor)
+  // }
+
+  const reset = () => setCounter(initialState)
 
   return{
-    state,
+    counter,
     increment,
-    decrement,
     reset
   }
 }
