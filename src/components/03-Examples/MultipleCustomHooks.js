@@ -14,7 +14,7 @@ export const MultipleCustomHooks = () => {
   return (
     <div>
       <h1>Breaking Bad Quotes</h1>
-
+      
       {
         loading ?
         (
@@ -25,12 +25,12 @@ export const MultipleCustomHooks = () => {
         (
           <div>
             <blockquote className='blockquote text-right'>
-              <p className="mb-0">
+              <p className="mb-3">
                 {quote}
               </p>
               <footer className="blockquote-footer">{author}</footer>
             </blockquote>
-            <button className='btn' onClick={increment}>
+            <button className='btn btn-primary' onClick={increment}>
               Next
             </button>
           </div>

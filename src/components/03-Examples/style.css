@@ -1,0 +1,12 @@
+body{
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+blockquote p{
+  margin-bottom: 1rem;
+  display: block;
+}
+.text-right{
+  text-align: right;
+}
