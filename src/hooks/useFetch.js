@@ -38,7 +38,7 @@ export const useFetch = ( url ) => {
             error: null,
             data
           })
-        }, 4000);
+        }, 500);
 
       }else{
 

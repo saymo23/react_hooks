@@ -9,6 +9,11 @@ export const useCounter = (initialState = 110) => {
     setCounter((counter) + 1)
   }
 
+  const random = () => {
+    const random = Math.floor(Math.random() * 5)
+    setCounter((random) + 1)
+  }
+
   // const increment = (factor = 1) => {
   //   setState((state) + factor)
   // }
@@ -22,6 +27,7 @@ export const useCounter = (initialState = 110) => {
   return{
     counter,
     increment,
-    reset
+    reset,
+    random
   }
 }
